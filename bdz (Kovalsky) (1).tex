@@ -1,0 +1,557 @@
+
+\documentclass{article}
+
+\usepackage[usenames]{color}
+\usepackage{colortbl}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,mathtools}
+\usepackage{mathtext}
+
+\begin{document}
+\hypertarget{n0}{}
+\begin{center}
+    \textbf{\Large Ковальский И. В. (Б22-514)}
+    \end{center}
+
+
+\begin{center}
+\textbf{\Large Вариант 10}
+\end{center}
+
+
+\begin{center}
+    \textbf{\Large Оглавление(быстрый поиск)}
+    \end{center}
+ \hyperlink{n1}{\textcolor{blue}{\fbox{Номер 1}}}
+\hyperlink{n2}{\textcolor{blue}{\fbox{Номер 2}}}
+\hyperlink{n3}{\textcolor{blue}{\fbox{Номер 3}}}
+\hyperlink{n4}{\textcolor{blue}{\fbox{Номер 4}}}
+\hyperlink{n5}{\textcolor{blue}{\fbox{Номер 5}}}
+\hyperlink{n6}{\textcolor{blue}{\fbox{Номер 6}}}
+\hyperlink{n7}{\textcolor{blue}{\fbox{Номер 7}}}
+\hyperlink{n8}{\textcolor{blue}{\fbox{Номер 8}}}
+\hypertarget{n1}{}
+\section{}
+
+\begin{center}
+    \textbf{\Large 1.10}
+\end{center}
+
+
+\textbf{\Large Задание}
+
+
+Свести двойной интеграл 
+$\iint  f(x,y) \,dx \,dy$
+к повторному, расставить пределы интегрирования в полярных координатах в том и другом порядке, если область G задана следующим образом:
+\begin{center}
+G: $x^2 + (y-1)^2 <= 1$  , x >= 0
+\end{center}
+
+\textbf{\Large Решение}
+\begin{center}
+Функция G - внутренняя часть окр. с центром в точке (0,1) и R = 1
+\end{center}
+
+\begin{equation*}
+\begin{cases}
+    x = r 
+\cos \varphi
+\\
+y = r
+\sin \varphi
+\end{cases}
+\end{equation*}
+
+Подставляя новые координаты в функцию G получаем
+r = 2
+$\sin \varphi$
+
+Из условия задачи, что x >= 0 и r >= 0 находим отрезок, в котором лежит
+$\varphi$:
+
+\begin{center}
+    $\varphi$ =
+$[0,\frac{\pi}{2}]$
+\end{center}
+
+Радиус r лежит в следующих пределах:
+
+\begin{center}
+    r =
+$[0,2\sin \varphi]$
+\end{center}
+
+I = $\int_{0}^{\frac{\pi}{2}}  \,d\varphi \int_{0}^{2\sin \varphi} rf(r\cos \varphi,r\sin \varphi) \,dr$
+
+Меняя предел интегрирования получаем:
+I = $\int_{0}^{2} r  \,dr \int_{0}^{\arcsin \frac{r}{2}} f(r\cos \varphi,r\sin \varphi) \,d\varphi$
+
+\textbf{\Large Ответ}
+
+I = $\int_{0}^{\frac{\pi}{2}}  \,d\varphi \int_{0}^{2\sin \varphi} rf(r\cos \varphi,r\sin \varphi) \,dr = \int_{0}^{2} r  \,dr \int_{0}^{\arcsin \frac{r}{2}} f(r\cos \varphi,r\sin \varphi) \,d\varphi$
+\hypertarget{n2}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 2.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Пользуясь цилиндрическими или сферическими координатами, найти объем тела, ограниченного линиями:
+\begin{center}
+\[\frac{x^2}{2^2}+\frac{y^2}{3^2} = 1, z = xy, z = 0, x > 0, y > 0\]
+\end{center}
+
+\textbf{\Large Решение}
+
+Перейдем к цилиндрическим координатам:
+\begin{equation*}
+    \begin{cases}
+        x = r 
+    \cos \varphi
+    \\
+    y = r
+    \sin \varphi
+    \\
+    z = h
+    \\
+    J = r
+    \end{cases}
+    \end{equation*}
+
+Подставив их в первое уравнение получаем выражение для r:
+\begin{center}
+    \[r = \frac{6}{\sqrt{5\cos ^ 2 \varphi + 4} }\]
+ \end{center}
+
+Из условия задачи, что x > 0 и y > 0 находим отрезок, в котором лежит
+$\varphi$:
+
+\begin{center}
+    $\varphi$ =
+$(0,\frac{\pi}{2})$
+\end{center}
+
+Из уравнения z = xy находим h:
+\begin{center}
+    $h=r^2\cos \varphi\sin \varphi$
+    \end{center}
+
+Считаем следующий интеграл:
+\[I = \int_{0}^{\frac{\pi}{2}}  \,d\varphi \int_{0}^{\frac{6}{\sqrt{5\cos ^ 2 \varphi + 4} }} r  \,dr \int_{0}^{r^2\cos \varphi\sin \varphi}  \,dh\]
+
+\[I = \int_{0}^{\frac{\pi}{2}}  \,d\varphi \int_{0}^{\frac{6}{\sqrt{5\cos ^ 2 \varphi + 4} }} r  \,dr \int_{0}^{r^2\cos \varphi\sin \varphi}  \,dh = \int_{0}^{\frac{\pi}{2}}  \,d\varphi \int_{0}^{\frac{6}{\sqrt{5\cos ^ 2 \varphi + 4} }} r ^ 3 cos \varphi\sin \varphi \,dr =\] 
+
+= 162 $\int_{0}^{\frac{\pi}{2}}   \frac{4\sin 2\varphi}{(5\cos 2\varphi + 13)^ 2} \,d\varphi = \frac{9}{2}$
+
+\textbf{\Large Ответ}
+
+$\frac{9}{2}$
+\hypertarget{n3}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 3.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Вычислить криволинейный интеграл первого рода скалярного поля f вдоль кривой C:
+\begin{center}
+$\int\limits_{C} (x - y) \,dS$   
+\end{center}     
+
+\begin{center}
+$C: x ^ 2 + y^2 = 2y$
+\end{center}     
+
+\textbf{\Large Решение}
+
+Контур C представляет собой окружность
+
+Сделаем замену: 
+\begin{equation*}
+    \begin{cases}
+        x = 2
+    \cos \varphi \sin \varphi
+    \\
+    y = 2
+    \cos ^ 2 \varphi
+   
+    \end{cases}
+    \end{equation*}
+
+
+
+        \[dS = \sqrt{\varphi\backprime ^ (2) (t) + \psi\backprime ^ (2) (t)  }\,dt  = 2 \,dt\]
+
+        \[I = \int_{0}^{2\pi} (2\cos \varphi \sin \varphi - 2\cos ^ 2 \varphi)2 \,dt = 2 \int_{0}^{2\pi} (\sin 2\varphi - \cos 2\varphi - 1) \,dt = \]
+
+        \[= 2(\frac{1}{2} - 2\pi - \frac{1}{2}) = 4\pi\]
+
+\textbf{\Large Ответ}
+
+$4\pi$
+\hypertarget{n4}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 4.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Вычислить поверхностный интеграл первого рода скалярного поля f по поверхности S:
+\begin{center}
+$\iint\limits_{S} \left\lvert xy \right\rvert z \,dS$
+\end{center}
+
+\begin{center}
+    $S: z = x^2 + y^2, z <= 1$
+\end{center} 
+
+\textbf{\Large Решение}
+
+\[\frac{\partial  z}{\partial  x} = 2x, \frac{\partial  z}{\partial  y} = 2y\]
+
+\[\,dS = \sqrt{1 + (\frac{\partial  z}{\partial  x})^2 + (\frac{\partial  z}{\partial  y})^2} \,dx \,dy = \sqrt{1 + 4x^2 + 4y^2}\,dx \,dy\]
+
+\[\iint\limits_{S} \left\lvert xy \right\rvert z \,dS = \iint \left\lvert xy \right\rvert (x^2 + y^2) \sqrt{1 + 4x^2 + 4y^2} \,dx \,dy\]
+
+Перейдем к полярным координатам:
+
+\begin{equation*}
+    \begin{cases}
+        x = r 
+    \cos \varphi
+    \\
+    y = r
+    \sin \varphi
+    \end{cases}
+    \end{equation*}
+
+Из условий $z = x^2 + y^2, z <= 1$ находим, что r <= 1 
+
+Получаем следующие пределы интегрирования:
+
+\begin{center}
+    $\varphi$ =
+$[0,2\pi]$
+\end{center}
+
+\begin{center}
+    r =
+$[0,1]$
+\end{center}
+
+\[\iint \left\lvert xy \right\rvert (x^2 + y^2) \sqrt{1 + 4x^2 + 4y^2} \,dx \,dy  = \iint \left\lvert r^2 \cos \varphi \sin \varphi \right\rvert r^3 \sqrt{1+4r^2} \,dr \,d\varphi =\] 
+
+= $\frac{125\sqrt{5} - 1}{420}$
+
+\textbf{\Large Ответ}
+
+$\frac{125\sqrt{5} - 1}{420}$
+\hypertarget{n5}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 5.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Проверить, является ли веткорное поле $\overrightarrow{F}$ потенциальным; если является, то найти потенциал и работу поля при перемещении из точки (1;2;1) в точку (4;3;2):
+\begin{center}
+$\overrightarrow{F} = (y^4 - 6xz^3)\overrightarrow{i} + (3y^2z^2 + 4xy^3)\overrightarrow{j} + (2y^3z-9x^2z^2)\overrightarrow{k}$
+\end{center}
+
+\textbf{\Large Решение}
+
+Найдем ротор $rot \overrightarrow{F}$:
+
+\[
+    rot \overrightarrow{F} =
+    \begin{vmatrix}
+        \overrightarrow{i} & \overrightarrow{j} & \overrightarrow{k}\\
+        \frac{\partial }{\partial  x} & \frac{\partial }{\partial  y} & \frac{\partial }{\partial  z}\\
+      F_{x} & F_{y}& F_{z}
+    \end{vmatrix}
+ = (6y^2z - 6y^2z)\overrightarrow{i} - (-18xz^2 + 18xz^2) \overrightarrow{j} + (4y^3 - 4y^3) \overrightarrow{k} = 0\]
+ 
+ Значит поле $\overrightarrow{F}$ - потенциально
+
+ \[
+\frac{\partial  U}{\partial  x} = y^4 - 6xz^3,
+ \frac{\partial  U}{\partial  y} = 3y^2z^2 + 4xy^3,
+  \frac{\partial  U}{\partial  z} = 2y^3z - 9x^2z^2
+\]
+
+\[U(x,y,z) = \int (y^4 - 6xz^3) \,dx + C_{1}(y,z) = xy^4 - 3x^2z^3 + \varphi(y,z)\]
+
+\[\frac{\partial  U}{\partial  y} = 4xy^3 + \frac{\varphi(y,z)}{\partial  y} = 4xy^3 + 3z^2y^2 \implies \frac{\partial  \varphi}{\partial  y} = 3y^2z^2\]
+
+\[\varphi(y,z) = \int 3z^2y^2 \,dy + C_{2}(z) = y^3z^2 + \psi(z)\]
+
+\[\frac{\partial  U}{\partial  z} = \frac{\partial }{\partial  z}(xy^4 - 3x^2z^3 + y^3z^2 + \psi(z)) \implies \]
+
+\[\implies -9x^2z^2 + 2y^3z + \psi\backprime (z) = 2y^3z - 9x^2z^2 \implies \psi\backprime (z) = 0\]
+Следовательно, $\psi(z) = C = const$
+\[U(x,y,z) = xy^4 - 3x^2z^3 + y^3z^2 + C\]
+Работа поля при перемещении из точки (1;2;1) в точку (4;3;2):
+\[A = U(4,3,2) - U(1,2,1) = 27\]
+\textbf{\Large Ответ}
+
+\[U(x,y,z) = xy^4 - 3x^2z^3 + y^3z^2 + C\] \[A = 27\]
+\hypertarget{n6}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 6.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Найти поток векторного поля $\overrightarrow{F}$ через внешнюю сторону поверхности S:
+\[\overrightarrow{F} = x^2\overrightarrow{i} + y^2\overrightarrow{j} + z^2\overrightarrow{k}\]
+S - внешняя сторона сферы
+\[(x-1)^2 + (y-1)^2 + z^2 = R^2 \]
+\textbf{\Large Решение}
+\[div \overrightarrow{F} = 2x + 2y + 2z\]
+По формуле Остроградского-Гаусса
+\[\Pi = \iint\limits_{\delta} \overrightarrow{F} \,d\overrightarrow{\delta} = \iiint\limits_{V} div \overrightarrow{F} \,dV = \iiint\limits_{V} (2x + 2y + 2z) \,dV = 2\iiint\limits_{V} (x + y + z) \,dV\]
+Перейдем к сферическим координатам:
+\begin{equation*}
+    \begin{cases}
+        x = 1 + r 
+    \cos \varphi \sin \theta
+    \\
+    y = 1 + r
+    \sin \varphi \sin \theta
+    \\
+    z = r \cos\theta
+    \\
+    J = r^2\sin\theta
+    \end{cases}
+    \end{equation*}
+
+\begin{center}
+    $\varphi$ =
+    $[0,2\pi]$
+\end{center}
+
+\begin{center}
+        $\theta$ =
+    $[0,\pi]$
+\end{center}
+
+\begin{center}
+        r =
+    $[0,R]$
+\end{center}
+
+Произведя замену считаем следующий интеграл:
+\[2\int_{0}^{2\pi}  \,d\varphi \int_{0}^{\pi}  \,d\theta \int_{0}^{R} (1 + r\cos\varphi \sin\theta + 1 + r\sin\varphi\sin\theta + r\cos\theta)r^2\sin\theta  \,dr = \frac{16\pi R^3}{3}\]
+\textbf{\Large Ответ}
+
+$\frac{16\pi R^3}{3}$
+
+
+
+
+\hypertarget{n7}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 7.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Используя формулу Гаусса-Остроградского, найти поток векторного поля $\overrightarrow{F}$ через всю границу области S.
+\[\overrightarrow{F} = 4x\overrightarrow{i} - 2y\overrightarrow{j} - z\overrightarrow{k}\]
+\[S:3x + 2y = 12, 3x + y = 6, y = 0, x + y + z = 6, z = 0 \]
+\textbf{\Large Решение}
+
+$div \overrightarrow{F} = 4 - 2 - 1 = 1$
+
+\[\iint\limits_{S}(\overrightarrow{F} * \overrightarrow{n})  \,dS  = \iiint\limits_{F}1 \,dx\,dy\,dz = \int_{0}^{6}  \,dy \int_{\frac{6 - y}{3}}^{\frac{12 - 2y}{3}}  \,dx \int_{0}^{6 - x - y}  \,dz  \]
+Считая данный интеграл получаем:
+\[\frac{1}{6}\int_{0}^{6} (y - 6) ^ 2 \,dy = -12\]
+\textbf{\Large Ответ:}
+-12
+\hypertarget{n8}{}
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+\section{}
+
+\begin{center}
+    \textbf{\Large 8.10}
+\end{center}
+
+\textbf{\Large Задание}
+
+Используя формулу Стокса, вычислить циркуляцию векторного поля $\overrightarrow{F}$ вдоль кривой $\gamma$
+
+\[\overrightarrow{F} = y\overrightarrow{i} - x\overrightarrow{j} + z^2\overrightarrow{k}\]
+\[\gamma: x^2 + y^2 = 1, z = 4\]
+\textbf{\Large Решение}
+
+z = 4 - поверхность S, через которую будем искать поток ротора.
+
+Единичный вектор - (0,0,1)
+
+\[
+    rot \overrightarrow{F} =
+    \begin{vmatrix}
+        \overrightarrow{i} & \overrightarrow{j} & \overrightarrow{k}\\
+        \frac{\partial }{\partial  x} & \frac{\partial }{\partial  y} & \frac{\partial }{\partial  z}\\
+      P & Q & R
+    \end{vmatrix}
+ = (0)\overrightarrow{i} - (0) \overrightarrow{j} + (-1 - 1) \overrightarrow{k} = -2\overrightarrow{k}\]
+
+ \[\oint\limits_{\gamma} \overrightarrow{F} \cdot \,d\overrightarrow{r} = -2 \iint\limits_{S} \,dS         \]
+Т.к. z = 4, то $ \,dS = \sqrt{1 + (\frac{\partial  z}{\partial  x})^2 + (\frac{\partial  z}{\partial  y})^2} \,dx \,dy = \sqrt{1} \,dx \,dy$
+\[-2 \iint\limits_{S} \,dS = -2 \iint\limits_{D} \,dx \,dy = -2\pi r^2 = -2\pi\]
+
+Поскольку область D: $x^2 + y^2 = 1$ представляет собой окружность радиуса 1 с центром в т. (0,0)
+
+\textbf{\Large Ответ:}
+-$2\pi$
+
+\[\hyperlink{n0}{\textcolor{blue}{\fbox{Вернуться в начало}}}\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
